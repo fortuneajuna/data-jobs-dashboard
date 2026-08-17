@@ -2,6 +2,13 @@
 
 An end-to-end analytics platform that ingests job posting data, runs analytical queries, visualizes insights through a multi-page dashboard, and predicts salaries using machine learning.
 
+## Preview
+<img width="1386" height="870" alt="image" src="https://github.com/user-attachments/assets/8aed9da7-9e70-4a7b-80f3-d04ecedaefaf" />
+<img width="1826" height="937" alt="image" src="https://github.com/user-attachments/assets/6dbd50ec-9f2b-4adb-ac8c-fa18203d4577" />
+<img width="1896" height="948" alt="image" src="https://github.com/user-attachments/assets/e3dc7a7a-c916-4bfa-b540-b68d8b0c5a3b" />
+<img width="1351" height="710" alt="image" src="https://github.com/user-attachments/assets/6f2b4b8f-7541-4bb6-ba4d-75c2d4e00716" />
+
+
 ## Architecture
 
 ```
