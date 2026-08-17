@@ -42,6 +42,9 @@ pip install -r requirements.txt
 # Ingest data
 PYTHONPATH=. python etl/pipeline.py --file /path/to/jobs.csv
 
+# Train the salary model
+PYTHONPATH=. python models/train_salary_model.py
+
 # Launch dashboard
 streamlit run dashboard/app.py     # → http://localhost:8501
 
