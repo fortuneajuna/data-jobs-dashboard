@@ -1,0 +1,35 @@
+# Core Data
+pandas>=2.1.0
+numpy>=1.26.0
+
+# Database
+duckdb>=1.0.0
+
+# ETL & Utilities
+python-dotenv>=1.0.0
+pycountry>=23.0.0
+tqdm>=4.66.0
+
+# Visualization
+plotly>=5.18.0
+streamlit>=1.30.0
+
+# Machine Learning
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+mlxtend>=0.23.0
+joblib>=1.3.0
+
+# Graph/Network
+networkx>=3.2
+pyvis>=0.3.2
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+great-expectations>=0.18.0
+
+# Development
+black>=23.0.0
+ruff>=0.1.0
+mypy>=1.7.0

@@ -1,0 +1,4 @@
+model,R2,MAE,RMSE
+LinearRegression,,93300.0,93300.0
+RandomForest,,93300.0,93300.0
+XGBoost,,93300.0,93300.0

@@ -1,0 +1,355 @@
+/* ============================================================
+   Dashboard Theme — Professional Dark
+   ============================================================ */
+
+/* ── Fonts ── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ── Root ── */
+.stApp {
+    background-color: #0e1117;
+    color: #e2e8f0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 14px;
+}
+
+/* ── Sidebar ── */
+[data-testid="stSidebar"] {
+    background-color: #111318;
+    border-right: 1px solid #1e2330;
+}
+
+[data-testid="stSidebar"] * {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+[data-testid="stSidebar"] a:hover {
+    color: #60a5fa !important;
+    background-color: #1a1f2e !important;
+}
+
+[data-testid="stSidebarNavLink"][aria-current="page"] {
+    background-color: #1d2d4a !important;
+    color: #60a5fa !important;
+    border-left: 2px solid #3b82f6;
+    font-weight: 600;
+}
+
+/* ── Page header ── */
+h1 {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    color: #f1f5f9 !important;
+    letter-spacing: -0.01em;
+    margin-bottom: 4px !important;
+}
+
+h2 {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #cbd5e1 !important;
+}
+
+h3 {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #94a3b8 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+/* ── Metric / KPI cards ── */
+[data-testid="stMetric"] {
+    background-color: #111318;
+    border: 1px solid #1e2330;
+    border-radius: 10px;
+    padding: 18px 20px !important;
+    transition: border-color 0.15s;
+}
+
+[data-testid="stMetric"]:hover {
+    border-color: #2d3a52;
+}
+
+[data-testid="stMetricLabel"] {
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.06em !important;
+    text-transform: uppercase;
+    color: #475569 !important;
+}
+
+[data-testid="stMetricValue"] {
+    font-size: 26px !important;
+    font-weight: 700 !important;
+    color: #60a5fa !important;
+    line-height: 1.2;
+}
+
+[data-testid="stMetricDelta"] {
+    font-size: 11px !important;
+}
+
+/* ── Expanders (filter panels) ── */
+[data-testid="stExpander"] {
+    background-color: #111318 !important;
+    border: 1px solid #1e2330 !important;
+    border-radius: 10px !important;
+    margin-bottom: 16px;
+}
+
+[data-testid="stExpander"] summary,
+.streamlit-expanderHeader {
+    color: #94a3b8 !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    padding: 14px 16px !important;
+}
+
+[data-testid="stExpander"] summary:hover {
+    color: #e2e8f0 !important;
+}
+
+/* ── Select boxes ── */
+div[data-baseweb="select"] > div {
+    background-color: #111318 !important;
+    border: 1px solid #1e2330 !important;
+    border-radius: 7px !important;
+    color: #e2e8f0 !important;
+    font-size: 13px !important;
+}
+
+div[data-baseweb="select"] > div:hover {
+    border-color: #3b82f6 !important;
+}
+
+div[data-baseweb="select"] > div:focus-within {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.15) !important;
+}
+
+/* Dropdown menu */
+[data-baseweb="popover"] [role="listbox"] {
+    background-color: #1a1f2e !important;
+    border: 1px solid #1e2330 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-baseweb="popover"] [role="option"] {
+    color: #94a3b8 !important;
+    font-size: 13px !important;
+}
+
+[data-baseweb="popover"] [role="option"]:hover,
+[data-baseweb="popover"] [aria-selected="true"] {
+    background-color: #1d2d4a !important;
+    color: #60a5fa !important;
+}
+
+/* ── Multiselect ── */
+[data-baseweb="tag"] {
+    background-color: #1d2d4a !important;
+    border-radius: 5px !important;
+}
+
+[data-baseweb="tag"] span {
+    color: #60a5fa !important;
+    font-size: 12px !important;
+}
+
+/* ── Text inputs ── */
+[data-testid="stTextInput"] input {
+    background-color: #111318 !important;
+    border: 1px solid #1e2330 !important;
+    border-radius: 7px !important;
+    color: #e2e8f0 !important;
+    font-size: 13px !important;
+}
+
+[data-testid="stTextInput"] input:focus {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.15) !important;
+}
+
+/* ── Buttons ── */
+.stButton button {
+    background-color: transparent;
+    color: #94a3b8;
+    border: 1px solid #1e2330;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 16px;
+    transition: all 0.15s;
+}
+
+.stButton button:hover {
+    background-color: #1a1f2e;
+    border-color: #3b82f6;
+    color: #e2e8f0;
+}
+
+/* Primary button */
+.stButton [kind="primary"] button,
+.stButton button[data-testid="stBaseButton-primary"] {
+    background-color: #3b82f6 !important;
+    border-color: #3b82f6 !important;
+    color: #ffffff !important;
+}
+
+.stButton button[data-testid="stBaseButton-primary"]:hover {
+    background-color: #2563eb !important;
+    border-color: #2563eb !important;
+}
+
+/* ── Divider ── */
+hr {
+    border: none !important;
+    border-top: 1px solid #1e2330 !important;
+    margin: 20px 0 !important;
+}
+
+/* ── Info / warning / error / success banners ── */
+[data-testid="stInfo"] {
+    background-color: #0f1f38 !important;
+    border: 1px solid #1d3a6e !important;
+    border-radius: 8px !important;
+    color: #93c5fd !important;
+}
+
+[data-testid="stWarning"] {
+    background-color: #1f1500 !important;
+    border: 1px solid #3d2a00 !important;
+    border-radius: 8px !important;
+    color: #fcd34d !important;
+}
+
+[data-testid="stSuccess"] {
+    background-color: #052016 !important;
+    border: 1px solid #063d25 !important;
+    border-radius: 8px !important;
+    color: #6ee7b7 !important;
+}
+
+[data-testid="stError"] {
+    background-color: #200a0a !important;
+    border: 1px solid #3d1212 !important;
+    border-radius: 8px !important;
+    color: #fca5a5 !important;
+}
+
+/* ── Tabs ── */
+[data-testid="stTabs"] [role="tab"] {
+    color: #64748b !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    padding: 10px 16px !important;
+    border-bottom: 2px solid transparent;
+}
+
+[data-testid="stTabs"] [role="tab"][aria-selected="true"] {
+    color: #60a5fa !important;
+    border-bottom-color: #3b82f6 !important;
+}
+
+[data-testid="stTabs"] [role="tablist"] {
+    border-bottom: 1px solid #1e2330 !important;
+}
+
+/* ── Plotly charts — transparent background ── */
+.js-plotly-plot .plotly .main-svg {
+    background: transparent !important;
+}
+
+.js-plotly-plot .plotly .bg {
+    fill: transparent !important;
+}
+
+/* ── DataFrames / tables ── */
+[data-testid="stDataFrame"] {
+    border: 1px solid #1e2330 !important;
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+
+[data-testid="stDataFrame"] th {
+    background-color: #111318 !important;
+    color: #64748b !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #1e2330 !important;
+}
+
+[data-testid="stDataFrame"] td {
+    color: #cbd5e1 !important;
+    font-size: 13px !important;
+    border-bottom: 1px solid #0e1117 !important;
+}
+
+[data-testid="stDataFrame"] tr:hover td {
+    background-color: #1a1f2e !important;
+}
+
+/* ── Caption / small text ── */
+[data-testid="stCaptionContainer"],
+.stCaption,
+small {
+    color: #475569 !important;
+    font-size: 11px !important;
+}
+
+/* ── General markdown text ── */
+p, li, .stMarkdown {
+    color: #94a3b8;
+    line-height: 1.6;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0e1117;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e2330;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2d3a52;
+}
+
+/* ── Spinner / loading ── */
+[data-testid="stSpinner"] {
+    color: #3b82f6 !important;
+}
+
+/* ── Checkbox & radio ── */
+[data-testid="stCheckbox"] label,
+[data-testid="stRadio"] label {
+    color: #94a3b8 !important;
+    font-size: 13px !important;
+}
+
+[data-testid="stCheckbox"] [role="checkbox"][aria-checked="true"],
+[data-testid="stRadio"] [role="radio"][aria-checked="true"] {
+    background-color: #3b82f6 !important;
+    border-color: #3b82f6 !important;
+}
+
+/* ── Slider ── */
+[data-testid="stSlider"] [role="slider"] {
+    background-color: #3b82f6 !important;
+}
+
+[data-testid="stSlider"] [data-baseweb="slider"] div[role="progressbar"] {
+    background-color: #3b82f6 !important;
+}
